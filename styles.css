@@ -23,3 +23,17 @@ main {
   margin: 15px 0;
   border-radius: 10px;
 }
+/* --- Hostaway widget clickability fixes --- */
+.widgetCard {
+  position: relative;
+  z-index: 5;
+}
+
+#hostaway-booking-widget,
+#hostaway-booking-widget * {
+  pointer-events: auto !important;
+}
+
+iframe {
+  pointer-events: auto !important;
+}
