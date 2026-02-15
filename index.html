@@ -34,12 +34,24 @@
     </section>
 
     <section>
-      <h2>Book Direct</h2>
-      <p>baseUrl: 'https://164771_1.holidayfuture.com/',
-.</p>
-    </section>
-  </main>
+     <!-- Hostaway Search Bar Widget -->
+<div id="hostaway-booking-widget"></div>
 
-  <script src="app.js"></script>
-</body>
-</html>
+<script src="https://d2q3n06xhbi0am.cloudfront.net/widget.js?1640277196"></script>
+<script>
+  window.addEventListener("load", function () {
+    if (typeof window.searchBar !== "function") {
+      console.log("Hostaway searchBar function not found yet.");
+      return;
+    }
+
+    window.searchBar({
+      baseUrl: "https://164771_1.holidayfuture.com/",
+      showLocation: true,
+      color: "#cc2dcf",
+      rounded: true,
+      openInNewTab: true,
+      font: "Open Sans",
+    });
+  });
+</script>
