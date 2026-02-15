@@ -37,3 +37,24 @@ main {
 iframe {
   pointer-events: auto !important;
 }
+/* --- Hostaway widget: ensure it's clickable --- */
+#book { position: relative; z-index: 10; }
+
+.widgetCard {
+  position: relative;
+  z-index: 10;
+  overflow: visible;
+}
+
+#hostaway-booking-widget {
+  position: relative;
+  z-index: 11;
+  min-height: 120px;
+}
+
+/* If the widget uses iframes internally, make sure they can receive clicks */
+#hostaway-booking-widget iframe {
+  position: relative;
+  z-index: 12;
+  pointer-events: auto !important;
+}
