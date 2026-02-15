@@ -58,3 +58,24 @@ iframe {
   z-index: 12;
   pointer-events: auto !important;
 }
+/* --- Make Hostaway widget readable on dark site --- */
+.widgetCard{
+  background: rgba(255,255,255,.96) !important;
+  border: 1px solid rgba(0,0,0,.08) !important;
+  color: #111 !important;
+}
+
+.widgetCard *{
+  color: #111 !important;
+}
+
+/* Inputs / placeholders */
+.widgetCard input,
+.widgetCard select{
+  background: #fff !important;
+  color: #111 !important;
+}
+
+.widgetCard input::placeholder{
+  color: rgba(0,0,0,.55) !important;
+}
